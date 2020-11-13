@@ -11,7 +11,7 @@ def file_path(string):
 
 def output_file_path(path):
     filepath, extension = os.path.splitext(path)
-    return f"{filepath}_clean.{extension}"
+    return f"{filepath}_clean{extension}"
 
 parser = argparse.ArgumentParser(description='Preprocess CSV file exported from Argent for usage in Firefly III CSV import tool.')
 parser.add_argument('--path', type=file_path, help='Path of CSV input file')
